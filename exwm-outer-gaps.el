@@ -78,6 +78,7 @@ exwm-outer-gaps-increment-step"
       (add-hook 'exwm-workspace--update-workareas-hook
                 #'exwm-outer-gaps-compute-gaps)
     (remove-hook 'exwm-workspace--update-workareas-hook
-                 #'exwm-outer-gaps-compute-gaps)))
+                 #'exwm-outer-gaps-compute-gaps))
+  (exwm-outer-gaps-apply))
 
 (provide 'exwm-outer-gaps)
